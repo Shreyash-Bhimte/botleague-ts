@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white font-body;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block bg-yellow text-black font-bold text-xs tracking-widest uppercase px-7 py-3 rounded transition-colors hover:bg-yellow-dim;
+  }
+  .btn-outline {
+    @apply inline-block bg-transparent text-white font-semibold text-xs tracking-widest uppercase px-7 py-3 rounded border border-dark-border transition-colors hover:border-yellow hover:text-yellow;
+  }
+  .section-label {
+    @apply text-yellow text-xs font-semibold tracking-widest uppercase mb-2;
+  }
+  .section-title {
+    @apply font-display text-4xl md:text-5xl font-bold uppercase tracking-wide leading-none;
+  }
+  .card {
+    @apply bg-dark-card border border-dark-border rounded;
+  }
+}
